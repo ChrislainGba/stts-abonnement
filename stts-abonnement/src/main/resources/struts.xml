@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- Specify the resource bundle name and location By default your/package/name/package.properties. -->
+    <constant name="struts.custom.i18n.resources" value="label" />
+	<package name="default" namespace="/" extends="struts-default">
+		 <!-- Configuration des intercepteurs -->
+		<interceptors>
+	        <!-- Ajoutez l'intercepteur i18n -->
+	        <interceptor name="i18n" class="org.apache.struts2.interceptor.I18nInterceptor" />
+	    </interceptors>
+		<default-action-ref name="index"></default-action-ref>
+		<action name="index" class="com.xl1.stts.abonnement.web.AbonnementAction" method="index">
+			<result>views/abonnements.jsp</result>
+			<result name="error">views/error.jsp</result>
+		</action>
+		<action name="getSubForm" class="com.xl1.stts.abonnement.web.AbonnementAction" method="getSubForm">
+			<result>views/subForm.jsp</result>
+			<result name="error">views/error.jsp</result>
+		</action>
+		<action name="save" class="com.xl1.stts.abonnement.web.AbonnementAction" method="save">
+			<result>views/abonnements.jsp</result>
+			<result name="error">views/error.jsp</result>
+		</action>
+		
+	</package>
+</struts>

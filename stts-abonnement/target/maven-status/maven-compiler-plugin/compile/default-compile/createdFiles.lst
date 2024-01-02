@@ -1,0 +1,10 @@
+com\xl1\stts\abonnement\mapper\AbonnementMapper.class
+com\xl1\stts\abonnement\web\AbonnementAction.class
+com\xl1\stts\abonnement\dao\IAbonnementDAOJPAImpl.class
+com\xl1\stts\abonnement\service\IAbonnementService.class
+com\xl1\stts\abonnement\entity\AbonnementInternet.class
+com\xl1\stts\abonnement\dao\IAbonnementDAO.class
+com\xl1\stts\abonnement\dto\AbonnementDTO.class
+com\xl1\stts\abonnement\entity\Abonnement.class
+com\xl1\stts\abonnement\service\IAbonnementServiceImpl.class
+com\xl1\stts\abonnement\entity\AbonnementGSM.class
